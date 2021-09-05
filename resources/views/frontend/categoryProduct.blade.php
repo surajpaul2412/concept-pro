@@ -17,32 +17,7 @@
         </div>
     </div>
 </section>
-<!-- End: Page Banner -->    
-
-<!-- Start: fliter Bar Section -->   
-<section class="filter-bar">
-    <div class="container">  
-        <div class="d-flex justify-content-between align-items-center">
-            <div class="left">
-                <p class="text-uppercase"> <a id="hideButton" href="#">Hide Filters</a></p>
-            </div>
-            <div class="right">
-                <label for="">SORT BY:</label>
-                <select>
-                    <option value=""> Price Low To High</option>
-                    <option value=""> Price High To Low</option> 
-                </select>
-            </div>
-        </div>
-    </div>
-</section>    
-
-<!-- Start: hr Section -->   
-<section class="hr-area">
-    <div class="container">  
-        <hr>
-    </div>
-</section>  
+<!-- End: Page Banner -->
 
 <!-- Start: About Section -->        
 <section class="section-sm single-product-area">

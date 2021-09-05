@@ -17,32 +17,7 @@
         </div>
     </div>
 </section>
-<!-- End: Page Banner -->    
-
-<!-- Start: fliter Bar Section -->  
-<section class="filter-bar">
-    <div class="container">  
-        <div class="d-flex justify-content-between align-items-center">
-            <div class="left">
-                <p class="text-uppercase"> <a id="hideButton" href="#">Hide Filters</a></p>
-            </div>
-            <div class="right">
-                <label for="">SORT BY:</label>
-                <select>
-                    <option value=""> Price Low To High</option>
-                    <option value=""> Price High To Low</option> 
-                </select>
-            </div>
-        </div>
-    </div>
-</section>    
-
-<!-- Start: hr Section -->   
-<section class="hr-area">
-    <div class="container">  
-        <hr>
-    </div>
-</section>  
+<!-- End: Page Banner --> 
 
 <!-- Start: About Section -->        
 <section class="section-sm single-product-area">
@@ -65,7 +40,7 @@
                             @endif
                         @endforeach
                     </ul>
-                </div> 
+                </div>
             </div>  
             <div class="col-md-9">
                 <div class="row justify-content-start align-items-center product-detail-box">
@@ -74,12 +49,15 @@
                         <p><b>SKU:</b> {{$product->SKU}} </p> 
                         <h5>Key Features</h5>
                        {!!$product->description!!}
+                       <div class="mt-4">
+                            <a href="{{$product->url}}" target="_blank" class="btn text-white" style="background: #000;">HOW TO BUY</a>
+                        </div>
                     </div>
                     <div class="col-md-6">
                         <img class="img-fluid" src="{{asset('storage')}}/{{$product->image}}" alt="{{$product->name}}"/>
                     </div> 
                 </div> 
-            </div>   
+            </div>
         </div>  
     </div>
 </section>
