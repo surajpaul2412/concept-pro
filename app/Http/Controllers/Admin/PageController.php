@@ -41,7 +41,7 @@ class PageController extends Controller
     {
         $request->validate([
             'title'=>'required|min:3|max:255',
-            'content'=> 'required||min:3|max:255',
+            'content'=> 'required||min:3',
             'image'=> 'required|mimes:jpeg,jpg,png,gif|max:2048',
             'slug'=>'required|min:2',
             'meta_title'=>'nullable|string',
@@ -102,7 +102,7 @@ class PageController extends Controller
     {
         $request->validate([
             'title'=>'required|min:3|max:255',
-            'content'=> 'required||min:3|max:255',
+            'content'=> 'required||min:3',
             'image'=> 'nullable|mimes:jpeg,jpg,png,gif|max:2048',
             'hidden_image'=> 'nullable|string',
             'slug'=>'required|min:2',

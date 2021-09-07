@@ -11,7 +11,7 @@
         <div class="col-lg-3 mb-4 col-md-3 col-sm-6 col-xs-12">
             <a href="{{route('admin.category.create')}}" class="decoration-none">
                 <div class="pb-2 pt-4 px-4 bg-white" style="border-radius: 5px;border: solid 0.5px #d3d2d8;">
-                    <img src="{{ asset('assets/backend/images/manager.svg') }}" width="35px">
+                    <img src="{{ asset('assets/backend/images/convert.png') }}" width="35px">
                     <h6 class="bold text-dark pt-2">Add New Category</h6>
                     <p class="text-dark" style="font-size: 11px;">
                         Lorem Ipsum is simply dummy text of the printing and typesetting industry.
@@ -22,7 +22,7 @@
         <div class="col-lg-3 mb-4 col-md-3 col-sm-6 col-xs-12">
             <a href="{{route('admin.subCategory.create')}}" class="decoration-none">
                 <div class="pb-2 pt-4 px-4 bg-white" style="border-radius: 5px;border: solid 0.5px #d3d2d8;">
-                    <img src="{{ asset('assets/backend/images/manager.svg') }}" width="35px">
+                    <img src="{{ asset('assets/backend/images/diagram.png') }}" width="35px">
                     <h6 class="bold text-dark pt-2">Add Sub Category</h6>
                     <p class="text-dark" style="font-size: 11px;">
                         Lorem Ipsum is simply dummy text of the printing and typesetting industry.
@@ -33,7 +33,7 @@
         <div class="col-lg-3 mb-4 col-md-3 col-sm-6 col-xs-12">
             <a href="{{route('admin.product.create')}}" class="decoration-none">
                 <div class="pb-2 pt-4 px-4 bg-white" style="border-radius: 5px;border: solid 0.5px #d3d2d8;">
-                    <img src="{{ asset('assets/backend/images/manager.svg') }}" width="35px">
+                    <img src="{{ asset('assets/backend/images/new-product.png') }}" width="35px">
                     <h6 class="bold text-dark pt-2">Add New Product</h6>
                     <p class="text-dark" style="font-size: 11px;">
                         Lorem Ipsum is simply dummy text of the printing and typesetting industry.
@@ -44,8 +44,19 @@
         <div class="col-lg-3 mb-4 col-md-3 col-sm-6 col-xs-12">
             <a href="{{route('admin.testimonials.create')}}" class="decoration-none">
                 <div class="pb-2 pt-4 px-4 bg-white" style="border-radius: 5px;border: solid 0.5px #d3d2d8;">
-                    <img src="{{ asset('assets/backend/images/manager.svg') }}" width="35px">
+                    <img src="{{ asset('assets/backend/images/testimonials.png') }}" width="35px">
                     <h6 class="bold text-dark pt-2">Add New Testimonial</h6>
+                    <p class="text-dark" style="font-size: 11px;">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                    </p>
+                </div>
+            </a>
+        </div>
+        <div class="col-lg-3 mb-4 col-md-3 col-sm-6 col-xs-12">
+            <a href="{{route('admin.page.create')}}" class="decoration-none">
+                <div class="pb-2 pt-4 px-4 bg-white" style="border-radius: 5px;border: solid 0.5px #d3d2d8;">
+                    <img src="{{ asset('assets/backend/images/survey.png') }}" width="35px">
+                    <h6 class="bold text-dark pt-2">Add New page</h6>
                     <p class="text-dark" style="font-size: 11px;">
                         Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                     </p>
