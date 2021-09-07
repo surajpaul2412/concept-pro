@@ -1,8 +1,10 @@
 @extends('layouts.frontend.app')
 @section('title')
+@if($siteSolution)
 <title>Concept Pro | {{$siteSolution->meta_title}}</title>
 <meta name="keyword" content="{!!$siteSolution->meta_keyword!!}">
 <meta name="description" content="{!!$siteSolution->meta_desc!!}">
+@endif
 @endsection
 
 @section('css')
@@ -22,7 +24,7 @@
 <!-- End: Page Banner -->   
 
 <!-- Start: About Section -->
-@if($siteSolution->count())
+@if($siteSolution)
 <section class="section-sm">
     <div class="container">   
         <div class="row"> 
@@ -115,7 +117,6 @@
 </section>         
 <!-- Start: End Section -->
 @include('layouts.frontend.partials.training')  
-
 @endsection
 
 @section('script')

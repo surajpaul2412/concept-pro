@@ -158,7 +158,7 @@ class ProductController extends Controller
             'meta_keyword'=>'nullable',
             'meta_desc'=>'nullable',
             'order'=>'required|integer',
-            'buy'=>'nullable|integer',
+            'buy'=>'nullable|string',
         ]);
         // dd($request->all());
 
@@ -252,5 +252,9 @@ class ProductController extends Controller
     {
         Product::findOrFail($id)->delete();
         return redirect('/admin/product')->with('success', 'Product deleted successfully.');
+    }
+    
+    public function tutorial(){
+        return view('admin.product.tutorial');
     }
 }

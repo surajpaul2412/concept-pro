@@ -113,7 +113,7 @@
           </div>
           <div class="form-group">
               <label class="text-dark" for="content">Buy now url :</label>
-              <input type="text" name="buy" class="form-control @error('buy') is-invalid @enderror" value="{{old('buy')}}" required>
+              <input type="text" name="buy" class="form-control @error('buy') is-invalid @enderror" value="{{old('buy')}}">
               @error('buy')
                   <span class="invalid-feedback" role="alert">
                       <strong>{{ $message }}</strong>

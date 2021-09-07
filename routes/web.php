@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Models\Page;
 
 /*
 |--------------------------------------------------------------------------
@@ -47,10 +48,20 @@ Route::group(['as'=>'admin.','prefix'=>'admin','namespace'=>'Admin','middleware'
     Route::delete('category/{id}/destroySubCategory', 'CategoryController@destroySubCategory')->name('category.destroySubCategory');
     Route::resource('category', 'CategoryController');
     Route::resource('subCategory', 'SubCategoryController');
+    Route::get('product/tutorial', 'ProductController@tutorial')->name('product.tutorial');
     Route::resource('product', 'ProductController');
     // site-solutions
     Route::resource('siteSolution', 'SiteSolutionController');
     Route::resource('siteSolutionSection', 'SiteSolutionSectionController');
     // banner
     Route::resource('banner', 'BannerController');
+    // page
+    Route::resource('page', 'PageController');
 });
+
+$pages = Page::all();
+foreach ($pages as $page) {
+    Route::get('/'.$page->slug.'', function() use($page) {
+        return view('frontend.page',compact('page'));
+    });
+}

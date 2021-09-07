@@ -68,6 +68,7 @@
             <h6 class="collapse-header">Product Options:</h6>
             <a class="collapse-item" href="{{route('admin.product.index')}}">Products</a>
             <a class="collapse-item" href="{{route('admin.product.create')}}">Add Product</a>
+            <a class="collapse-item" href="{{route('admin.product.tutorial')}}">Tutorial</a>
           </div>
         </div>
     </li>
@@ -106,6 +107,41 @@
             <h6 class="collapse-header">Testimonials:</h6>
             <a class="collapse-item" href="{{route('admin.testimonials.index')}}">Testimonials</a>
             <a class="collapse-item" href="{{route('admin.testimonials.create')}}">Add Testimonials</a>
+          </div>
+        </div>
+    </li>
+
+    <!-- Divider -->
+    <hr class="sidebar-divider d-none d-md-block">
+     <!-- Heading -->
+    <div class="sidebar-heading">
+        Pages
+    </div>
+
+    <li class="nav-item">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#siteSolutionCollapse" aria-expanded="true" aria-controls="siteSolutionCollapse">
+          <i class="fas fa-laptop-code"></i>
+          <span>Site Solution Page</span>
+        </a>
+        <div id="siteSolutionCollapse" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+          <div class="bg-white py-2 collapse-inner rounded">
+            <h6 class="collapse-header">Site Solution :</h6>
+            <a class="collapse-item" href="{{route('admin.siteSolution.index')}}">Site Solution</a>
+            <a class="collapse-item" href="{{route('admin.siteSolutionSection.index')}}">Site Solution Sections</a>
+          </div>
+        </div>
+    </li>
+
+    <li class="nav-item">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#pageCollapse" aria-expanded="true" aria-controls="pageCollapse">
+          <i class="fas fa-laptop-code"></i>
+          <span>Pages</span>
+        </a>
+        <div id="pageCollapse" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+          <div class="bg-white py-2 collapse-inner rounded">
+            <h6 class="collapse-header">Pages:</h6>
+            <a class="collapse-item" href="{{route('admin.page.index')}}">All Pages</a>
+            <a class="collapse-item" href="{{route('admin.page.create')}}">Add New Page</a>
           </div>
         </div>
     </li>
