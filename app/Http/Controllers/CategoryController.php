@@ -47,8 +47,9 @@ class CategoryController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show($slug)
     {
+        $id = Category::whereSlug($slug)->first()->id;
         $categories = Category::orderBy('order','asc')->get();
         $category = Category::findOrFail($id);
 
@@ -94,8 +95,9 @@ class CategoryController extends Controller
         //
     }
 
-    public function product($id)
+    public function product($slug)
     {
+        $id = CategoryItem::whereSlug($slug)->first()->id;
         $categories = Category::orderBy('order','asc')->get();
         $categoryItem = CategoryItem::findOrFail($id);
         $products = Product::where('categoryItem_id',$id)->orderBy('order','asc')->get();
@@ -103,8 +105,9 @@ class CategoryController extends Controller
         return view('frontend.categoryProduct',compact('categoryItem','categories','products'));
     }
 
-    public function detail($id)
+    public function detail($slug)
     {
+        $id = Product::whereSlug($slug)->first()->id;
         $categories = Category::orderBy('order','asc')->get();
         $product = Product::findOrFail($id);
         return view('frontend.detail',compact('product','categories'));

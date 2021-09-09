@@ -26,7 +26,7 @@
             @foreach($category->categoryItems as $item)
                 <div class="col">
                     <div class="product-box">
-                        <a href="{{route('categories.product',$item->id)}}">
+                        <a href="{{route('categories.product',$item->slug)}}">
                             <img class="img-fluid" src="{{asset('storage')}}/{{$item->image}}" alt="{{$item->name}}"/>
                             <p>{{$item->name}}</p>
                         </a>

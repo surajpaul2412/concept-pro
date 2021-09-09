@@ -27,7 +27,7 @@ $categories = \App\Models\Category::orderBy('order','asc')->get();
                                     @if($category->categoryItems->count())
                                     <ul class="sub-menu">
                                         @foreach($category->categoryItems as $item)
-                                        <li class="nav-item"><a class="nav-link" href="{{url('categories')}}/{{$category->id}}">{{$item->name}}</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="{{url('categories')}}/{{$category->slug}}">{{$item->name}}</a></li>
                                         @endforeach
                                     </ul>
                                     @endif

@@ -20,9 +20,10 @@ Route::resource('/welcome', 'WelcomeController');
 Route::get('/home', 'HomeController@index')->name('home');
 Route::resource('/about', 'AboutUsController');
 Route::resource('/company-profile', 'companyProfileController');
-Route::get('/categories/{id}/product', 'CategoryController@product')->name('categories.product');
+Route::get('/categories/{slug}/product', 'CategoryController@product')->name('categories.product');
+Route::get('/categories/{slug}', 'CategoryController@show')->name('categories.show');
 Route::resource('/categories', 'CategoryController');
-Route::get('/product/{id}/detail', 'CategoryController@detail')->name('product.detail');
+Route::get('/product/{slug}/detail', 'CategoryController@detail')->name('product.detail');
 Route::resource('/site-solutions', 'SiteSolutionController');
 
 Route::get('/case-studies', function () {
