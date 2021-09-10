@@ -56,7 +56,7 @@
                                 <li><a href="javascript:void(0);">{{$item->name}} <i class="it ti-plus"></i></a>
                                     <ul class="sidebar-sub-menu">
                                         @foreach($item->categoryItems as $index => $item)
-                                        <li><a href="{{$item->slug}}">{{$item->name}}</a></li>
+                                        <li><a href="{{route('categories.product',$item->slug)}}">{{$item->name}}</a></li>
                                         @endforeach
                                     </ul> 
                                 </li>
